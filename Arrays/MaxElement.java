@@ -1,4 +1,4 @@
-package Arrays;
+
 
 public class MaxElement {
     public static int findMax(int[] arr){
