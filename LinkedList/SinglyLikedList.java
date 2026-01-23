@@ -37,7 +37,7 @@ public class SinglyLikedList {
 
 
 
-public void deleteFromBegining(){
+    public void deleteFromBegining(){
     if (head == null){
         System.out.println("List is empty");
         return;
@@ -45,7 +45,7 @@ public void deleteFromBegining(){
     head = head.next;
 }
 
-public void deleteByValue(int value){
+    public void deleteByValue(int value){
     if (head == null){
         System.out.println("List is empty");
         return;
@@ -63,6 +63,6 @@ public void deleteByValue(int value){
         return;
     }
     temp.next = temp.next.next;
-}
+    }
 }
 
