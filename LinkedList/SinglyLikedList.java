@@ -34,4 +34,35 @@ public class SinglyLikedList {
         }
         System.out.println("null");
     }
+
+
+
+public void deleteFromBegining(){
+    if (head == null){
+        System.out.println("List is empty");
+        return;
+    }
+    head = head.next;
 }
+
+public void deleteByValue(int value){
+    if (head == null){
+        System.out.println("List is empty");
+        return;
+    }
+    if (head.data == value){
+        head = head.next;
+        return;
+    }
+    Node temp = head;
+    while (temp.next != null && temp.next.data != value){
+        temp = temp.next;
+    }
+    if (temp.next == null){
+        System.out.println("Value not found");
+        return;
+    }
+    temp.next = temp.next.next;
+}
+}
+
