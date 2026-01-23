@@ -64,5 +64,19 @@ public class SinglyLikedList {
     }
     temp.next = temp.next.next;
     }
+
+    public void reverse() {
+        Node prev = null;
+        Node curr = head;
+        Node next = null;
+
+        while (curr != null){
+            next = curr.next;
+            curr.next =  prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
 }
 
